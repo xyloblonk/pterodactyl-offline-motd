@@ -9,7 +9,9 @@ Gives your minecraft server run inside docker via pterodactyl wings an offline m
 
 - This script purposely only responds to server-list pings (status requests). It will not allow players to join; if a player attempts to actually log in to a status-only listener the connection is rejected. That keeps it safe and simple.
 
-- You can optionally use your Pterodactyl panel endpoint to provide a list of allocations (IP + port + server uuid). The script expects that endpoint to return JSON with entries like `{ "ip": "1.2.3.4", "port": 25565, "uuid": "..." }`.
+- You can optionally use your Pterodactyl panel endpoint to provide a list of allocations (IP + port + server uuid). The script expects that endpoint to return JSON with entries like `{ "ip": "1.2.3.4", "port": 25565, "uuid": "..." }`
+
+- I'd highly recommend running this on the host (Your machine) and not docker as it complicates the networking as docker is an isolated environment so communication and proxying is difficult without exposing traffic to the public network unless you have private networking.
 
 ## How to use / deploy
 
