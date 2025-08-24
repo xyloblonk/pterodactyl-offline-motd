@@ -1,0 +1,16 @@
+{
+  "name": "pterodactl-offline-motd",
+  "version": "1.0.0",
+  "description": "Lightweight server-list ping responder that shows custom MOTDs for offline Minecraft servers. Integrates with a Pterodactyl allocation list.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js "
+  },
+  "author": "XyloBlonk",
+  "license": "MIT",
+  "dependencies": {
+    "minecraft-protocol": "^1.40.0",
+    "minecraft-server-util": "^5.2.2",
+    "node-fetch": "^2.6.7"
+  }
+}
